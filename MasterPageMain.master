@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageMain.master.cs" Inherits="MasterPageMain" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="min-height:660px; max-height:1600px; background-image: url('/Images/master-bg.jpg');">       
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    <div style="border-style: none; border-color: #006699; background-color: #000000; height: 50px; opacity: 0.5; filter: alpha(opacity=50); height:auto">
+        <center>
+            <br />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/FANsmall.png"></asp:Image>
+            <br /><br />
+        <asp:Label ID="Label3" runat="server" Text="THE PROJECT" Font-Names="Gill Sans Ultra Bold" Font-Size="X-Large" ForeColor="#006699" Font-Bold="True"></asp:Label>
+        
+            <br />
+        
+        <asp:Label ID="Label1" runat="server" Text="(ONLINE INFORMATION PROVIDER)" Font-Names="Gill Sans Ultra Bold" Font-Size="XX-Large" ForeColor="#006699" Font-Bold="True"></asp:Label>
+        
+            <br />
+        
+        <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Gill Sans Ultra Bold Condensed" Font-Size="Large" ForeColor="#006699" NavigateUrl="~/About us.aspx">About us</asp:HyperLink>
+            
+        &nbsp;
+        <asp:Label ID="Label2" runat="server" Text="|" ForeColor="#006699" Font-Size="XX-Large" Font-Names="Gill Sans Ultra Bold Condensed"></asp:Label>
+     
+        &nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Gill Sans Ultra Bold Condensed" Font-Size="Large" ForeColor="#006699" NavigateUrl="~/FAQ.aspx">FAQ's</asp:HyperLink>
+        <%--&nbsp;
+        <asp:Label ID="Label4" runat="server" Text="|" ForeColor="White" Font-Size="XX-Large"></asp:Label>
+        &nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Calibri" Font-Size="Large" ForeColor="#999999" NavigateUrl="~/FAQ.aspx">Contact us</asp:HyperLink>--%>
+            <br /><br />
+        </center>
+    </div>
+    </div>
+    </form>
+</body>
+</html>
